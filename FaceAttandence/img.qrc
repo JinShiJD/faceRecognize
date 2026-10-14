@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/yes.png</file>
+        <file>img/recognizeScale.png</file>
+    </qresource>
+</RCC>

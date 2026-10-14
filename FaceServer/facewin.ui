@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>faceWin</class>
+ <widget class="QMainWindow" name="faceWin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>556</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>faceWin</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tWserverInfo">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>551</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="attendancePhoto">
+     <attribute name="title">
+      <string>考勤图像</string>
+     </attribute>
+     <widget class="QLabel" name="labHeader">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-20</y>
+        <width>301</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(255, 170, 255);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="registerWin" name="registerInfo">
+     <attribute name="title">
+      <string>注册窗口</string>
+     </attribute>
+    </widget>
+    <widget class="queryWin" name="queryInfo">
+     <attribute name="title">
+      <string>查询信息</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>queryWin</class>
+   <extends>QWidget</extends>
+   <header location="global">querywin.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>registerWin</class>
+   <extends>QWidget</extends>
+   <header location="global">registerwin.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
